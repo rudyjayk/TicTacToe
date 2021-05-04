@@ -1,0 +1,34 @@
+﻿<Window x:Class="Tic_Tac_Toe.SettingWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Tic_Tac_Toe"
+        mc:Ignorable="d"
+        Title="SettingWindow" Height="200" Width="450"
+        Loaded="colors_OnLoaded"
+        WindowStartupLocation="CenterScreen">
+    <Grid Name="settingGrid">
+        <Label Name="settingLabel" Foreground="Black" Content="Choose Color for:" HorizontalContentAlignment="Center" FontSize="40" FontWeight="UltraBold" HorizontalAlignment="Left" VerticalAlignment="Top" Height="59" Width="432"/>
+
+        <ComboBox
+            Name ="Background"
+            HorizontalAlignment="Left"
+            Margin="52,97,0,0"
+            VerticalAlignment="Top"
+            Width="120"
+            Loaded="ComboBox_Loaded"
+            SelectionChanged="ComboBox_SelectionChanged"/>
+        <ComboBox
+            Name="Font"
+            HorizontalAlignment="Left"
+            Margin="272,97,0,0"
+            VerticalAlignment="Top"
+            Width="120"
+            Loaded="ComboBox_Loaded"
+            SelectionChanged="ComboBox_SelectionChanged"/>
+        <Button Content="Close" Click="btn_CloseClick"  HorizontalAlignment="Left" Margin="197,139,0,0" VerticalAlignment="Top" Width="49"/>
+        <Label Name="backLabel" Foreground="Black" Content="Background Color" HorizontalContentAlignment="Center" HorizontalAlignment="Left" FontWeight="UltraBold" Margin="52,66,0,0" VerticalAlignment="Top" Width="120"/>
+        <Label Name="fontLabel" Foreground="Black" Content="Font Color" HorizontalContentAlignment="Center" HorizontalAlignment="Left" FontWeight="UltraBold" Margin="272,66,0,0" VerticalAlignment="Top" Width="120"/>
+    </Grid>
+</Window>
